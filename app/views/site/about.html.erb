@@ -1,0 +1,11 @@
+<h1>About</h1>
+
+<h2>Our Team</h2>
+
+<% @authors.each do |author| %>
+<ul>
+<li><%= author %></li>
+</ul>
+<% end %>
+
+<%= render 'shared/navigation'%>
