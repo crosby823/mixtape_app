@@ -1,18 +1,5 @@
 class SongsController < ApplicationController
   
-  def jobs
-    render :text => "All your jobs are belong to us"
-  end
-  
-  def name
-    my_name = "Julie" # Replace your name here
-    render :text => "Hello, I am #{my_name}!"
-  end
-  
-  def name
-    render text: 'This is {#name}\'s Page'
-  end
-  
   # GET /songs
   # GET /songs.json
   def index

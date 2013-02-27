@@ -4,19 +4,19 @@ MixtapeApp::Application.routes.draw do
 
   resources :songs
   
-  match '/their_name' => 'songs#name'
+  get '/their_name' => 'songs#name'
   
-  match '/about' => 'site#about'
+  get '/about' => 'site#about'
   
-  match '/jobs' => 'site#jobs'
+  get '/jobs' => 'site#jobs'
   
-  match '/login' => 'sessions#new'
+  get '/login' => 'sessions#new'
   
-  match '/logout' => 'sessions#destroy'
+  get '/logout' => 'sessions#destroy'
   
   post '/sessions' => 'sessions#create'
   
-  match '/signup' => 'users#registration'
+  get '/signup' => 'users#registration'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
